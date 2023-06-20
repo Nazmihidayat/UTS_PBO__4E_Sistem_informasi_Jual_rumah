@@ -98,6 +98,13 @@ datasetbooking data;
             }
         });
 
+        txtindex.setText("0");
+        txtindex.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtindexActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -192,7 +199,7 @@ datasetbooking data;
         data.settgl_booking(txttglbooking.getText());
         data.setStatus(txtstatus.getText());
         data.settgl_verifi(txttanggalveri.getText());
-
+        JOptionPane.showMessageDialog(this, "Data Berhasil Disimpan");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -206,6 +213,10 @@ datasetbooking data;
         "\nTanggal Verifikasi : "+data.getTgl_verifikasi().get(i);
         JOptionPane.showMessageDialog(this, pesan);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtindexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtindexActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtindexActionPerformed
 
     /**
      * @param args the command line arguments

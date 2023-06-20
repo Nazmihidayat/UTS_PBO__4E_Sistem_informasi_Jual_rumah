@@ -62,6 +62,8 @@ datasetadmin data;
             }
         });
 
+        txtindex.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -121,7 +123,7 @@ datasetadmin data;
         data.setid_admin(Integer.valueOf(txtadmin.getText()));
          data.setusername(jTextField2.getText());
          data.setpassword(jTextField3.getText());
-        
+        JOptionPane.showMessageDialog(this, "Data Berhasil Di Simpan");
      
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -129,7 +131,7 @@ datasetadmin data;
         // TODO add your handling code here:
          int i = Integer.valueOf(txtindex.getText());
         String pesan =  "ID Admin : "+data.getId_admin().get(i)+
-                        "\nUsername : "+data.getUsername().get(i)+
+                        "\nUsername : "+data.getusername().get(i)+
                         "\npassword : "+data.getPassword().get(i);
         JOptionPane.showMessageDialog(this, pesan);
     }//GEN-LAST:event_jButton2ActionPerformed

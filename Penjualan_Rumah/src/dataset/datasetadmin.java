@@ -26,7 +26,7 @@ public class datasetadmin {
         this.id_admin.add(value);
     }
 
-    public ArrayList<String> getUsername() {
+    public ArrayList<String> getusername() {
         return username;
     }
      public void setusername(String value){

@@ -74,6 +74,8 @@ datasetpktrumah data;
             }
         });
 
+        txtindex.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -169,6 +171,8 @@ datasetpktrumah data;
         data.setnm_rumah(txtnamarumah.getText());
         data.setdetail(txtdetail.getText());
         data.setjumlah_unit(Integer.valueOf(txtjumlahunit.getText()));
+        JOptionPane.showMessageDialog(this, "Data Berhasil Disimpan");
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
